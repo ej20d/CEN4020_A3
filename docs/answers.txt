@@ -1,0 +1,51 @@
+tutorials completed on 10.14.2022
+github account created on 10.14.2022
+
+(5.1)
+Username for 'https://github.com': ej20d
+Password for 'https://ej20d@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 352 bytes | 352.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ej20d/CEN4020_A3.git
+   f4975e5..91ee115  master -> master
+
+(5.2)
+$git rev-list --all --count
+returns a count of 8 commits for the repository
+
+(5.3)
+$git log README.md
+returns two commits, the most recent of which was Fri Oct 14 13:57:36 2022 -0400
+
+(5.4)
+Branches have great utility. Among two of their more common uses is, first, to ease the burden of collaboration by allowing individuals or teams to work on distinct versions of a software product at one time; second, to test new features which may or may not be added to the final software product.
+
+(5.5)
+The command
+$git log
+is used to peruse the commit history for a particular project, while
+$git status
+is used to examine the current state of the project, particularly the working directory and differences betweent the working directory and remote repositories.
+
+(5.6)
+$git log --follow Vehicle.h
+
+(5.7)
+$git log --all --grep='file'
+$git log --all --grep="file"
+
+(5.8)
+(i) Inheritance describes that characteristic of OOP classes which allows the programmer to define new classes from old ones and to arrange classes into a heirarchy, where classes lower on the heirarchy retain (some or all, depending on the usage) of the properties of classes above.
+(ii) Polymorphism describes that characteristic of OOP classes which allows the programmer to reuse implementations across multiple data types, typically due to some underlying similarity in the types (for example, a multiplication function which works on both integers and floats, as both are numbers).
+(iii) Encapsulation describes that characteristic of OOP classes which allows the programmer to view a class as a unit, and to utilize the class (or object) in a manner such that its internal structure is not visible to other parts of the software.
+
+(5.9)
+In the integration manager workflow, the integration manager is responsible for all integration conflict resolution, and each developer is specified to have both a public and private repository (with the integration manager working from developers' public repositories). In the dictator and lieutenants workflow, the dictator, while ultimately responsible for integration conflict resolution, works only with the main repository and the lieutenants' repositories. Each programmer is assigned to a lieutenant, who works from the repositories of the programmers assigned to them and manages integration conflict resolution regarding their own branch.
+
+(5.10)
+The centralized workflow does not scale well; for each new member added to the team, every other member now has to manage confict resolution for every other member as well as the new member, leading to an untenable situation. In contrast, the dictator and lieutenants workflow scales in multiple ways - in addition to creating more lieutenants, one can create sub-lieutenants, and in this way the workload on any single individual never grows unmanageably high.
